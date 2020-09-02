@@ -25,5 +25,5 @@ def diamond():
         print((row >=n)*(" "*(row-n+1)+"*"*(2*(2*n-row)-3)),end="")
         print("")     
         
- #Calling the function
+#Calling the function
 diamond()
