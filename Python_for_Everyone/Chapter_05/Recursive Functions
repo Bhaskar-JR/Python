@@ -1,0 +1,36 @@
+A recursive function is a function that calls itself.
+A recursive computation solves a problem by using
+the solution to the same problem with simpler inputs.
+
+
+There are two key requirements to make sure that the
+recursion is successful:
+• Every recursive call must simplify the task in some
+way.
+• There must be special cases to handle the simplest
+tasks directly.
+
+<Page No.296, Section 5.10>
+
+-----------Case of printTriangle Function----------- 
+
+[]
+[][]
+[][][]
+[][][][]
+[][][][][]
+
+def printTriangle(sideLength) :
+    if sideLength < 1 : return
+    printTriangle(sideLength - 1)
+    print("[]" * sideLength)
+
+Look at the printTriangle function one more time and
+notice how utterly reasonable it is. If the side length is
+0, nothing needs to be printed. The next part is just as
+reasonable. Print the smaller triangle and don’t think
+about why that works. Then print a row of []. Clearly,
+the result is a triangle of the desired size.
+
+
+    
