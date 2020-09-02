@@ -26,6 +26,7 @@ def monte_carlo():
     n = int(input("Enter the no. of iterations:"))
     
     #Taking user input(Y/N) if the user wants to see results of each simulation row-wise 
+    #https://stackoverflow.com/questions/41832613/python-input-validation-how-to-limit-user-input-to-a-specific-range-of-integers?rq=1
     while True:
         try:
             table = input("Do you want to see row-wise results (Y/N):")
