@@ -43,6 +43,9 @@ Your program shuts down and reports a “stack overflow”.
 
 Infinite recursion happens either because the arguments don’t get simpler or because a special
 terminating case is missing. 
+Also, refer the below link :
+https://stackoverflow.com/questions/14222416/recursion-in-python-runtimeerror-maximum-recursion-depth-exceeded-while-callin
+
 
 11.2 Problem Solving: Thinking Recursively 617
 
