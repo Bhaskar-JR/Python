@@ -34,7 +34,7 @@ the result is a triangle of the desired size.
 
 Git Tutorial : https://guides.github.com/activities/hello-world/
 
-Infinite Recursion
+Infinite Recursion (Chapter 11/Common Error 11.1)
 
 A common programming error is an infinite recursion: a function calling itself over and over
 with no end in sight. The computer needs some amount of memory for bookkeeping for each call.
