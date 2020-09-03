@@ -34,5 +34,14 @@ the result is a triangle of the desired size.
 
 Git Tutorial : https://guides.github.com/activities/hello-world/
 
+Infinite Recursion
+
+A common programming error is an infinite recursion: a function calling itself over and over
+with no end in sight. The computer needs some amount of memory for bookkeeping for each call.
+After some number of calls, all memory that is available for this purpose is exhausted.
+Your program shuts down and reports a “stack overflow”.
+
+Infinite recursion happens either because the arguments don’t get simpler or because a special
+terminating case is missing. 
 
     
