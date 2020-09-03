@@ -1,0 +1,39 @@
+# Print Triangle using Recursive function
+def triangle(n):
+    if n > 0:
+        triangle(n-1)
+        print('[]'*n)
+        print("")
+    else:
+        return
+
+#Output 
+triangle(5)
+
+[]
+[][]
+[][][]
+[][][][]
+[][][][][]
+
+-------------------------------------------
+
+# Print Triangle inverted using Recursive function
+# Please note only the position of the recursion call has been shifted
+
+def triangle_1(n):
+    if n > 0:
+        print('[]'*n)
+        triangle_1(n-1)
+    else:
+        return
+
+#Output 
+triangle_1(5)
+[][][][][]
+[][][][]
+[][][]
+[][]
+[]
+
+
