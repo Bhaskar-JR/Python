@@ -44,4 +44,35 @@ Your program shuts down and reports a “stack overflow”.
 Infinite recursion happens either because the arguments don’t get simpler or because a special
 terminating case is missing. 
 
-    
+11.2 Problem Solving: Thinking Recursively 617
+
+Step 1 Consider various ways to simplify inputs.
+In your mind, focus on a particular input or set of inputs for the problem that you
+want to solve. Think how you can simplify the inputs in such a way that the same
+problem can be applied to the simpler input.
+
+Step 2 Combine solutions with simpler inputs into a solution of the original problem.
+In your mind, consider the solutions for the simpler inputs that you discovered in
+Step 1. Don’t worry how those solutions are obtained. Simply have faith that the solutions 
+are readily available. Just say to yourself:
+These are simpler inputs, so someone else will solve the problem for me. Now think how you
+can turn the solution for the simpler inputs into a solution for the input that you are 
+currently thinking about. Maybe you need to add a small quantity, perhaps related to the
+quantity that you lopped off to arrive at the simpler input.
+
+Step 3 Find solutions to the simplest inputs.
+A recursive computation keeps simplifying its inputs. Eventually it arrives at very
+simple inputs. To make sure that the recursion comes to a stop, you must deal with the
+simplest inputs separately. Come up with special solutions for them, which is usually 
+very easy.
+
+However, sometimes you get into philosophical questions dealing with degenerate
+inputs: empty strings, shapes with no area, and so on. Then you may want to investigate a
+slightly larger input that gets reduced to such a trivial input and see what value you 
+should attach to the degenerate inputs so that the simpler value, when used according to the
+rules you discovered in Step 2, yields the correct answer.
+
+Step 4 Implement the solution by combining the simple cases and the reduction step.
+Now you are ready to implement the solution. Make separate cases for the simple inputs that
+you considered in Step 3. If the input isn’t one of the simplest cases, then implement the 
+logic you discovered in Step 2.
