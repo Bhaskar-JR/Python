@@ -16,6 +16,7 @@
 import re
 def ispalindrome(string):
     str_1 = ("").join([i.lower() for i in str(string) if re.search(r"[a-zA-Z]",i)])
+    # Regular Expressions to ensure alphabets only (Refer link :https://www.python-course.eu/re.php)
     cont = []
     for i in range(len(str_1)):
         cont.insert(0,str_1[i])
