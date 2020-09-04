@@ -1,0 +1,77 @@
+Thinking Recursively (Eric Roberts)
+
+Informally, recursion is the process of solving a large problem by reducing
+it to one or more subproblems which are ( I) identical in structure to the original
+problem and (2) somewhat simpler to solve. Once that original subdivision has
+been made, the same decompositional technique is used to divide each of these
+subproblems into new ones which are even less complex. Eventually, the subproblems
+become so simple that they can be then solved without further subdivision,
+and the complete solution is obtained by reassembling the solved
+components.
+
+
+The structure of this "program" is typical of recursive algorithms represented
+in a programming language. The first step in a recursive procedure consists of
+a test to determine whether or not the current problem represents a simple
+case. If it does, the procedure handles the solution directly. If not, the problem
+is divided into subproblems, each of which is solved by applying the same
+recursive strategy. In this book, we will consider many recursive programs
+that solve problems which are considerably more detailed. Nonetheless, all of
+them will share this underlying structure.
+
+
+1. It must be possible to decompose the original problem into simpler instances of
+the same problem.
+2. Once each of these simpler subproblems has been solved, it must be possible to
+combine these solutions to produce a solution to the original problem.
+3. As the large problem is broken down into successively less complex ones, those
+subproblems must eventually become so simple that they can be solved without
+further subdivision.
+
+For a problem with these characteristics. the recursive solution follows in
+a reasonably straightforward way. The first step consists of checking to see if
+the problem fits into the "simple case" category. If it does, the problem is
+solved directly. If not, the entire problem is broken down into new subsidiary
+problems, each of which is solved by a recursive application of the algorithm.
+Finally. each of these solutions is then reassembled to form the solution to the
+original problem.
+
+Representing this structure in a Pascal-like form gives rise to the following
+template for recursive programs:
+
+        PROCEDURE SOLVE(instance);
+          BEGIN
+          IF instance is easy THEN
+            Solve problem directly
+          ELSE
+            BEGIN
+              Break this into new instances 11, 12, etc.;
+              SOLVE(I1); SOLVE(12); ... and so forth ...;
+              Reassemble the solutions
+            END
+        END;
+        
+Even though recursion acts as a reductionistic process in the sense that
+each problem is reduced to a sum of its parts, writing recursive programs tends
+to require a holistic view of the process. It is the big picture which is important,
+not the details. In developing a "recursive instinct," one must learn to stop
+analyzing the process after the first decomposition. The rest of the problem
+will take care of itself, and the details tend only to confuse the issue. When
+one cannot see the forest for the trees, it is of very little use to examine the
+branches, twigs, and leaves.
+
+For beginners, however, this holistic perspective is usually difficult to
+maintain. The temptation to look at each level of the process is quite strong,
+particularly when there is doubt about the correctness of the algorithm. Overcoming
+that temptation requires considerable confidence in the general mechanism
+of recursion, and the novice has little basis for that confidence.        
+        
+        
+        
+000000
+•00000
+••0000
+•••000 
+••••00
+•••••0
+•••••• 
